@@ -1,0 +1,18 @@
+{% extends 'main/loyout.html' %}
+
+{% block title %}Форма по добовлению статьи{% endblock %}
+
+{% block content %}
+  <div class="features">
+    <h1>Форма по добовлению статьи</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.title }}<br>
+      {{ form.anonse }}<br>
+      {{ form.full_text }}<br>
+      {{ form.data }}<br>
+      <span>{{ error }}</span>
+      <button class="btn btn-success" type="submit">Добавить статью</button>
+    </form>
+  </div>
+{% endblock %}
