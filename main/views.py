@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Bascet
 
 def index(request):
     data = {
@@ -12,5 +13,6 @@ def about(request):
 def contacts(request):
     return render(request, 'main/contacts.html')
 
-def tariffs(request):
-    return render(request, 'main/tariffs.html')
+def tovars(request):
+    products = Bascet.objects.all()
+    return render(request, 'main/tovars.html', {"products":products})

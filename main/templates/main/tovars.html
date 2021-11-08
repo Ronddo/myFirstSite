@@ -1,0 +1,19 @@
+{% extends 'main/loyout.html' %}
+
+{% block title %}Товары{% endblock %}
+
+{% block content %}
+<div class="features">
+  <h1>Товары</h1>
+  <div class="products">
+    {% for product in products %}
+      <div class="product-count">
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.anonse }}</p>
+        <p>{{ product.price}} р.</p>
+        <a href="basket"><button class="btn btn-info">Купить</button></a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
