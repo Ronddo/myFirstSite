@@ -1,0 +1,10 @@
+<! -- Выход с аккаунта -->
+
+{% extends "main/loyout.html" %}
+
+{% block content %}
+<div class="features">
+  <p>Вы вышли!</p>
+  <a href="{% url 'login'%}">Наэмите здесь, что бы войти снова!</a>
+</div>
+{% endblock %}

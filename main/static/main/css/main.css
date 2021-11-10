@@ -73,8 +73,25 @@ main .features {
   margin-top: 40px;
 }
 
+.error-pass {
+  text-decoration: none;
+  color: black;
+  transition: .4s ease;
+}
+
+.error-pass:hover {
+  color: #ed5959;
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+.login-btn {
+  margin-top: 20px;
+}
+
 main .features h1 {
   font-size: 50px;
+  margin-bottom: 30px;
 }
 
 main .features p {
@@ -97,7 +114,7 @@ div .alert-warning {
 }
 
 form {
-  margin-left: 32%;
+  margin: 0 auto;
   width: 500px;
   margin-top: 50px;
 }
